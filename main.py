@@ -168,19 +168,10 @@ def parseType(nsen):
 	return tipo
 
 def parseTim(nsen):
-	#Lnodos=len(readDestAddrLong())
         Vtipo=timSenXtipo(nsen)
-        #Vfinal=[]
 	tim=[]
-	#tipo=[]
-	#ntim=[]
-	#Vfinal.append(Vtipo[0][1])
 	for x in xrange(0,nsen):
 		tim.append(Vtipo[x][1])
-		#tipo.append(Vtipo[x][0])
-	#for z in xrange(0,nsen-1):
-		#ntim.append(Vtipo[z+1][1])
-		#Vfinal.append(ntim[z]-tim[z])
 	return tim		
 
 def work(dataT,tipo):
