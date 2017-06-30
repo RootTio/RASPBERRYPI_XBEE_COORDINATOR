@@ -19,16 +19,11 @@ def hora():
 
 def conn():
 	try:
-		print "Conectando a la base de datos..."
-        	#db= MySQLdb.connect(host= "192.168.0.110",user="root",passwd="innova09012017",db="greenhm")
-		db= MySQLdb.connect(host= "107.180.50.240",user="innova",passwd="greenhmpass",db="greenhm")
-		#db= MySQLdb.connect(host= "192.168.0.116",user="greenhm",passwd="greenhmpass",db="greenhm")
-		if(db.ping(True)):
-			pass
-		else: db= MySQLdb.connect(host= "107.180.50.240",user="innova",passwd="greenhmpass",db="greenhm")
+		print "Conectando a la base de datos...
+		db= MySQLdb.connect(host= "XXX.XXX.XXX.XXX",user="XXX",passwd="XXX",db="XXX")
 	except Exception as e:
 		print("No ha entrado a la base de datos")
-		print e
+		conn()
 	return db
 
 #VARIABLES GLOBALES
